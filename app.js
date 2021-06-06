@@ -1,6 +1,7 @@
 'use strict'
 
 // Express App (Routes)
+const port = process.env.PORT || 3000
 const express = require("express");
 const app     = express();
 const path    = require("path");
@@ -100,6 +101,6 @@ app.get("/getemail", async (req, res) =>
 
 
 
-app.listen(8000);
+app.listen(port);
  
 
