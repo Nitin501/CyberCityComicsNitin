@@ -94,7 +94,7 @@ app.get("/getemail", async (req, res) =>
   let numb = req.query.number;
   const data = await fetch('https://xkcd.com/'+numb.toString()+'/info.0.json').then(r => r.json())
   console.log(data.img);
-  num = numb;
+  num = parseInt(numb);
   res.send(data);
 });
 
