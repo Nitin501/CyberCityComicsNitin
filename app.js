@@ -36,31 +36,23 @@ app.get('/index.js',function(req,res){
 });
 
 var num = 1;
-var num2 = 0;
 
 app.get('/getimg', async(req, res) =>
 {
   const data = await fetch('https://xkcd.com/1/info.0.json').then(r => r.json())
-  console.log(data.img);
   res.send(data)
 });
 
 app.get('/getimgnext', async(req, res) =>
 {
-  num2 = num;
   num = num + 1;
-  console.log(num);
   const data = await fetch('https://xkcd.com/'+num.toString()+'/info.0.json').then(r => r.json())
-  console.log(data.img);
-  num2 = num;
   res.send(data)
 });
 
 app.get('/getimgprev', async(req, res) =>
 {
-  num2 = num;
   num = num - 1;
-  console.log(num);
   if (num <= 0)
   {
     num = 1;
@@ -70,8 +62,6 @@ app.get('/getimgprev', async(req, res) =>
   else 
   {
     const data = await fetch('https://xkcd.com/'+num.toString()+'/info.0.json').then(r => r.json())
-    console.log(data.img);
-    num2 = num;
     res.send(data);
   }
 
@@ -81,9 +71,7 @@ app.get('/getimgprev', async(req, res) =>
 app.get('/getimgrandom', async(req, res) =>
 {
   var Rnum = Math.floor(Math.random() * 1500) + 1; // returns a random integer from 1 to 1500
-  console.log(Rnum)
   const data = await fetch('https://xkcd.com/'+Rnum.toString()+'/info.0.json').then(r => r.json())
-  console.log(data.img);
   num = Rnum;
   res.send(data);
 });
@@ -93,7 +81,6 @@ app.get("/getemail", async (req, res) =>
 {
   let numb = req.query.number;
   const data = await fetch('https://xkcd.com/'+numb.toString()+'/info.0.json').then(r => r.json())
-  console.log(data.img);
   num = parseInt(numb);
   res.send(data);
 });
