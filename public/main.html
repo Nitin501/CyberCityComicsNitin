@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CyberCityComics</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <h1>Cyber City Comics</h1>
+        <div class = "contenttitle">
+            <h3 id='title'class = "comictitle">Title<h3>
+            <h5 id='year'class = "comicyear">Year<h5>
+        </div>
+        <div class = "contentdiv">
+            <div class = "content">
+                <img class = "imgcomic" src="" alt="Screen 1"/>
+                <div id = "tcnt">
+                    <div id = "trancontent">
+                        <p id = 'trans'>Transcript</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <br>
+        <div id="container">
+            <button id = "prevbtn" class = "Rbutton" type="button">Previous</button>
+            <button id = "randombtn" class = "Rbutton" type="button">Random</button>
+            <button id = "nextbutton" class = "Rbutton" type="button">Next</button>
+        </div>
+        <form method='get' action="/getemail">
+            <br>
+            <div id="conttextnum">
+                <input id="number" type="number" max='2000' min='1' placeholder="Enter number of comic you would like">
+            </div>
+            <br>
+            <div id="container">
+                <button id = "submiturl" class = "Rbutton" type="button">Submit</button>
+            </div>
+            </div>
+        </form>
+        <br>
+        <div class="mypanel"></div>
+        <br><br>
+        <script src="/index.js"></script>
+
+    </body>
+</html> 
+
+

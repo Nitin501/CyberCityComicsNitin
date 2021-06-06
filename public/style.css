@@ -1,0 +1,166 @@
+body{
+    font-family: tahoma;
+}
+
+.contenttitle {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* font-family: Tahoma; */
+    font-family: 'Signika Negative', sans-serif;
+}
+
+h1{
+    border: 12px;
+    color: rgb(146, 148, 248);
+    text-align: center;
+}
+
+.comictitle {
+    display: inline;
+}
+
+.comicyear {
+    display: inline;
+    color: rgb(146, 148, 248);
+}
+
+.contentdiv {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    height: 550px;
+    width: 75%;
+    display: inline;
+    border: 1px solid rgb(146, 148, 248);
+    border-radius: 10px;
+}
+
+.imgcomic {
+    height: 300px;
+    width: auto;
+    max-width: 80%;
+    text-align: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.transcontent {
+    height: 400px;
+    width: 400px;
+}
+
+.Rbutton {
+
+    font-weight: normal;
+
+    height: 35px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+}
+  
+.Rbutton:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+  
+.Rbutton:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+.Rbutton:hover:before {
+    left: 100%;
+}
+
+#container {
+    text-align: center;
+}
+
+#conttextnum {
+    text-align: center;
+}
+
+
+
+#number {
+    border-color: rgb(146, 148, 248);
+    border-radius: 5px;
+}
+
+.urlcontent {
+    text-align: center;
+}
+
+#trancontent {
+    display: inline;
+    text-align: center;
+    color: rgb(146, 148, 248);
+    /* height: auto; */
+    width: 50%;
+    /* border: 1px solid; */
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+}
+
+#tcnt {
+    margin-top: 140px;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 148, 248);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(86, 88, 214);
+  }
+
+#fname {
+    border: 1px solid rgb(146, 148, 248);
+    border-radius: 5px;
+}
+
+#number {
+    text-align: center;
+}
+
+
+
+
